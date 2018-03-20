@@ -1,0 +1,136 @@
+/* COLORS:
+
+    main-colors:
+        blue: #2a88c7;
+        orange: #d8704d;
+        pink: #d74f65;
+
+    background:
+        gray: #ebeef0;
+        white: #ffffff;
+
+    form:
+        dark-gray: #2d2c2c;
+        gray: #464444;
+        light-line: #504e4e;
+
+FONTS:
+
+    caption:
+        font-size: ;
+        font-family: ;
+
+   
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@font-face { 
+    font-family: cometa;
+    src: url(../fonts/cometa.ttf);  
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10pt;
+}
+
+body {
+    background: #ffffff;    
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #2a88c7 !important;
+}
+
+.caption {
+    font-family: cometa;
+}
+/*--------------------------LOG IN / LOG OUT---------------------------------*/
+.header__top {
+    display: block;    
+    height: 30px;
+    background-color: #ebeef0;      
+    text-align: right;  
+    line-height: 1.9;
+}
+.header__top a {
+    color: #7b8a97;
+}
+.header__top a:first-child {
+    margin-right: 20px;
+}
+.header__top a:nth-child(2) {
+    margin-right: 5px;
+}
+/*--------------------------LOGO & NAVIGATION---------------------------------*/
+.header__main {
+    display: block;    
+    height: 70px;
+    background-color: #ffffff 
+}
+
+.logo img {
+    height: 50px;    
+}
+
+.navigation {
+    display: inline;
+}
+
+/*--------------------------SECTION 1 / SLIDER---------------------------------*/
+.slider {
+    display: block;
+    height: 600px;
+    background: url(../img/background/island.jpg);    
+    background-size: cover;
+    background-position: 0 50%;
+}
+
+/*--------------------------SECTION 2 / CONTACTS---------------------------------*/
+
+.contacts {
+    display: block;
+    height: 200px;
+}
+
+.contacts-icon {
+    color: #2a88c7;
+}
+/*--------------------------SECTION 3 / NEWS---------------------------------*/
+.news-subscr-bgd {
+    display: block;
+    height: 600px;
+    background: url(../img/background/los_angeles.jpg);
+    background-size: cover;
+    background-position: 0 50%;
+    color: #ffffff;
+}
+/*--------------------------SECTION 4 / CONTINENTS---------------------------------*/
+
+.continents {
+    display: block;
+    height: 200px;
+    color: #7b8a97;
+
+}
+/*--------------------------SECTION 5 / POPULAT TOURS---------------------------------*/
+
+.popular-tours {
+    display: block;
+    height: 400px;
+    background: url(../img/background/popular_tour.jpg);
+    background-size: cover;
+    background-position: 0 50%;
+    color: #ffffff;
+}
+/*--------------------------SECTION 6 / FOOTER---------------------------------*/
+
+.footer-bgd {
+    display: block;
+    height: 150px;
+    background: #ebeef0;
+}
