@@ -20,30 +20,35 @@ FONTS:
         font-size: ;
         font-family: ;
 
-   
 */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 @font-face { 
     font-family: cometa;
     src: url(../fonts/cometa.ttf);  
 }
 
-*{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 10pt;
-}
-
 body {
-    background: #ffffff;    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    background: #ffffff;   
 }
 
-a {
-    text-decoration: none !important;
+button {
+    color: #ffffff;
+
+    border-radius: 1;
+    background-color: #2a88c7;    
+}
+
+form {
+    color: #504e4e;
+
+    border-radius: 1;   
 }
 
 a:hover {
-    color: #2a88c7 !important;
+    color: #2a88c7;
+    text-decoration: none;
 }
 
 .caption {
@@ -52,12 +57,13 @@ a:hover {
 /*--------------------------LOG IN / LOG OUT---------------------------------*/
 .header__top {
     display: block;    
-    height: 30px;
-    background-color: #ebeef0;      
+
     text-align: right;  
     line-height: 1.9;
+
+    background-color: #ebeef0;   
 }
-.header__top a {
+.header__top a:not(:hover) {
     color: #7b8a97;
 }
 .header__top a:first-child {
@@ -67,24 +73,53 @@ a:hover {
     margin-right: 5px;
 }
 /*--------------------------LOGO & NAVIGATION---------------------------------*/
-.header__main {
-    display: block;    
-    height: 70px;
+.navigation {
+    display: block;
+}
+.navigation__link {   
+
+    text-transform: uppercase;
+    color: #83878a;
+    font-weight: bold;
+}
+.navigation__link:last-child {
+    margin-right: 0;
+}
+.header-main {
+    display: block;       
+
     background-color: #ffffff 
 }
+.header-main__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;    
+}
+.header-main__row {
+    flex: 1 0 100%;
+    
+}
+.header-main__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.logo {
+    display: flex;    
+    align-items: center;  
 
+}
 .logo img {
     height: 50px;    
 }
 
-.navigation {
-    display: inline;
-}
 
 /*--------------------------SECTION 1 / SLIDER---------------------------------*/
 .slider {
     display: block;
     height: 600px;
+    
     background: url(../img/background/island.jpg);    
     background-size: cover;
     background-position: 0 50%;
@@ -104,16 +139,20 @@ a:hover {
 .news-subscr-bgd {
     display: block;
     height: 600px;
+    
+    color: #ffffff;
+
     background: url(../img/background/los_angeles.jpg);
     background-size: cover;
     background-position: 0 50%;
-    color: #ffffff;
+    
 }
 /*--------------------------SECTION 4 / CONTINENTS---------------------------------*/
 
 .continents {
     display: block;
     height: 200px;
+
     color: #7b8a97;
 
 }
@@ -122,15 +161,19 @@ a:hover {
 .popular-tours {
     display: block;
     height: 400px;
+
+    color: #ffffff;
+
     background: url(../img/background/popular_tour.jpg);
     background-size: cover;
     background-position: 0 50%;
-    color: #ffffff;
+    
 }
 /*--------------------------SECTION 6 / FOOTER---------------------------------*/
 
 .footer-bgd {
     display: block;
     height: 150px;
+
     background: #ebeef0;
 }
