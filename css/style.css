@@ -45,12 +45,6 @@ input[type="submit"] {
     transition: 0.4s;
 }
 
-form {
-    color: #504e4e;
-
-    border-radius: 1;   
-}
-
 a {
     transition: 0.4s;
 }
@@ -180,8 +174,7 @@ input[type="submit"]:hover {
     font-size: 14px;
 }
 
-.find-tour__search-icon {
-    
+.find-tour__search-icon {    
     float: right;
     color: #2a88c7;
 }
@@ -305,12 +298,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .news__block { 
    display: grid;
    grid-template: 50% 50% / repeat(3, 1fr);
-   margin-left:-50px; /*bc of the margin-left of the news__item*/
+   margin-bottom: 30px;
+   grid-column-gap: 50px;
+   grid-row-gap: 50px;
   
 }
-.news__item {   
-    margin-left: 50px;
-    margin-bottom: 40px;
+.news__item {  
     padding: 15px;
     font-size: 12px;
     background:#2a88c7;
@@ -449,16 +442,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 235px;
     color: #575757;
     border-radius: 2px;    
-    box-shadow: 1px 3px 15px #000000a8;
-    background: white;
+    overflow: hidden;
     transition: 0.6s;
-    border: 0.5px solid transparent;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .tour-card:hover {
-    cursor: all-scroll;
-    border-radius: 2px;
-    border: 0.5px solid #0092df;
+    cursor: all-scroll;    
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     
 }
 
@@ -467,8 +459,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     justify-content: flex-end;
     align-items: flex-end;       
     height: 185px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
     background: url(../img/tours/menorka.jpg);
     background-size: cover;    
 }
@@ -487,10 +477,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .tour-card__description {
     padding: 15px;
     font-size: 12px;
+    background: white;
 }
 
 .tour-card__title {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     font-size: 16px;
 }
 .fa_blue, .tour-card__text {
@@ -507,7 +498,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .tour-card__button {   
     float:right;  
-    margin-bottom: 12px;   
+       
     font-size: 11px;
     padding: 3px 9px;
 }
