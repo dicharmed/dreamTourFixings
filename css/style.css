@@ -146,17 +146,21 @@ input[type="submit"]:hover {
 
 /*--------------------------SECTION 1 / SLIDER---------------------------------*/
 .slider {
-    display: block;
-    height: 500px;
-    
+   
     background: url(../img/background/island.jpg);    
     background-size: cover;
     background-position: 0 50%;
 }
+.slider__container {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    grid-gap: 0 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
 .find-tour {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
+    
     border-radius: 2px;
     background-color: #464444;
 }
@@ -181,6 +185,7 @@ input[type="submit"]:hover {
 
 .find-tour__main {
     padding: 15px;
+    padding-bottom: 25px;
 }
 
 .find-tour select,
@@ -195,7 +200,7 @@ input[type="submit"]:hover {
 .find-tour__select {
     margin-bottom: 16px;
     height: 30px;
-    background: #2d2c2c url(../img/arrow.gif) 95% 50% no-repeat;
+    background: #2d2c2c url(../img/form/arrow.gif) 95% 50% no-repeat;
     border-radius: 2px;
     color: #6d6d6d;    
     cursor: pointer;
@@ -224,7 +229,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .find-tour__date input[type="date"] {
     padding-left: 8px;
     height: 30px;
-    background: #2d2c2c url(../img/calendar.gif) 96% 50% no-repeat;
+    background: #2d2c2c url(../img/form/calendar.gif) 96% 50% no-repeat;
     border-radius: 2px;
     color: #6d6d6d;
     outline: 0;
@@ -232,6 +237,47 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     
     font-size: 13px;
     
+}
+
+.find-your__range {
+    font-size: 13px;
+    color: #6D6D6D;
+}
+
+.float-right {
+    float: right;
+}
+
+.promotion {
+    display: grid;
+    grid-template: 50% 50% / 1fr 1fr;
+    grid-gap: 0 55px;
+}
+
+.promotion__left {  
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.promotion__right {
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-row-gap: 20px;
+}
+.promotion__item {
+    border-radius: 2px;
+    overflow: hidden;
+}
+.light-blue {
+    background: rgba(42, 136, 199, 0.83);
+}
+.light-orange {
+    background: rgba(216, 112, 77, 0.76);
+}
+.light-pink {
+    background: rgba(215, 79, 101, 0.76);
 }
 /*--------------------------SECTION 2 / CONTACTS---------------------------------*/
 
