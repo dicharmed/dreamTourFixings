@@ -153,8 +153,8 @@ input[type="submit"]:hover {
 }
 .slider__container {
     display: grid;
-    grid-template-columns: 25% 1fr;
-    grid-gap: 0 150px;
+    grid-template-columns: 23% 1fr;
+    grid-gap: 0 15%;
     padding-top: 50px;
     padding-bottom: 50px;
     
@@ -250,8 +250,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .promotion {
     display: grid;
-    grid-template: 50% 50% / 1fr 1fr;
-    grid-gap: 0 55px;
+    grid-template: 50% 50% / 40% 45%;
+    grid-gap: 0 5%;
+    justify-content: flex-end;
 }
 
 .promotion__left {  
@@ -264,11 +265,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: grid;
     grid-row-start: 1;
     grid-row-end: 3;
-    grid-row-gap: 20px;
+    grid-row-gap: 30px;
 }
 .promotion__item {
+    align-items: center;
+    display: grid;
+    padding: 15px;
     border-radius: 2px;
     overflow: hidden;
+    text-align: center;
 }
 .light-blue {
     background: rgba(42, 136, 199, 0.83);
@@ -278,6 +283,44 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .light-pink {
     background: rgba(215, 79, 101, 0.76);
+}
+
+.promotion__item__icon img {
+    height: 150px;
+}
+
+.promotion__item__icon {
+    margin-right: 20px;
+}
+.promotion__item__minus,
+.promotion__item__percentage,
+.promotion__item__percentage-sign {
+    color: white;
+}
+
+.promotion__item__percentage {
+    font-size: 75px;
+    line-height: 75px;
+}
+
+.promotion__item__minus,
+.promotion__item__percentage-sign {
+    font-size: 40px;
+}
+
+.promotion__item__description {
+    color: white;
+    font-size: 12px;
+}
+
+.promotion__right img {
+    height: 55px;
+}
+
+.promotion__percentage-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /*--------------------------SECTION 2 / CONTACTS---------------------------------*/
 
@@ -329,7 +372,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-align: center;
 }
 
-
 /*--------------------------SECTION 3 / NEWS---------------------------------*/
 .news {
     display: block; 
@@ -345,12 +387,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
    display: grid;
    grid-template: 50% 50% / repeat(3, 1fr);
    margin-bottom: 30px;
-   grid-column-gap: 50px;
-   grid-row-gap: 50px;
+   grid-column-gap: 10%;
+   grid-row-gap: 55px;
   
 }
 .news__item {  
-    padding: 15px;
+    padding: 15px 25px;
     font-size: 12px;
     background:#2a88c7;
     border-radius: 2px;
@@ -449,7 +491,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
     -moz-transform: scale(1.1);
-    transition: 0.6s;
+   
     cursor: pointer;
     opacity: 1;
 }
@@ -489,14 +531,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: #575757;
     border-radius: 2px;    
     overflow: hidden;
+    border: 1px solid transparent;
     transition: 0.6s;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .tour-card:hover {
-    cursor: all-scroll;    
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border: 1px solid #2a88c7;
+    cursor: all-scroll;
     
 }
 
