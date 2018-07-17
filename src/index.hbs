@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dream Tour</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="shortcut icon" href="./img/favicon.ico"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+</head>
+
+<body>
+    {{> './components/header'}}
+
+    <!--SECTION 1 - SLIDER-->
+    <div class="slider">
+        <div class="container slider__container">
+            <form action="" method="POST" class="find-tour">
+                <div class="find-tour__top">
+                    <div class="find-tour__title">Поиск тура</div>
+                    <a class="link-color-blue" href="http://">
+                        <i class="fa fa-search find-tour__search-icon" aria-hidden="true"></i>
+                    </a>
+
+                </div>
+                <div class="find-tour__main">
+                    <div class="find-tour__select">
+                        <select name="countries" id="countries">
+                            <option>Все страны</option>
+                            <option value="Greece">Греция</option>
+                            <option value="USA">США</option>
+                        </select>
+                    </div>
+                    <div class="find-tour__select">
+                        <select name="tours" id="tours">
+                            <option>Все туры</option>
+                            <option value="Beach">Пляжный</option>
+                            <option value="Mountains">Горнолыжный</option>
+                        </select>
+                    </div>
+                    <div class="find-tour__date">
+                        <input type="date">
+                    </div>
+                    <div class="find-tour__date">
+                        <input type="date">
+                    </div>
+                    <div class="find-your__range">
+                        <input type="range" name="" id="">
+                    </div>
+                    <div class="find-tour__btn blue-btn">
+                        <input type="submit" value="Найти">
+                    </div>
+
+                </div>
+
+            </form>
+            <div class="promotion">
+                <div class="promotion__left">
+                    <div class="promotion__item light-blue">
+                        <div class="promotion__item__icon" style="margin-right:0;">
+                            <img src="./img/sales/palm.png" alt="">
+                        </div>
+                        <div class="promotion__percentage-block">
+                            <span class="promotion__item__minus">-</span>
+                            <span class="promotion__item__percentage">10</span>
+                            <span class="promotion__item__percentage-sign">%</span>
+                        </div>
+
+                        <div class="promotion__item__description" style="text-transform: uppercase;">на все пляжные туры!</div>
+                    </div>
+                </div>
+                <div class="promotion__right">
+                    <div class="promotion__item light-orange">
+
+                        <div class="promotion__percentage-block">
+                            <img src="./img/sales/bed.png" class="promotion__item__icon " alt="">
+                            <div class="promotion__item__minus">-</div>
+                            <div class="promotion__item__percentage">10</div>
+                            <div class="promotion__item__percentage-sign">%</div>
+                        </div>
+
+                        <div class="promotion__item__description">на проживание в отеле Индии</div>
+                    </div>
+                    <div class="promotion__item light-pink">
+                        <div class="promotion__percentage-block">
+                            <img src="./img/sales/bed.png" class="promotion__item__icon " alt="">
+                            <div class="promotion__item__minus">-</div>
+                            <div class="promotion__item__percentage">10</div>
+                            <div class="promotion__item__percentage-sign">%</div>
+                        </div>
+                        <div class="promotion__item__description">на проживание в отеле Таиланда</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SECTION 2 - CONTACTS -->
+    <section class="contacts">
+        <div class="container contacts__container">
+            <div class="row contacts__row">
+                <div class="col-sm-4 col-12  contacts__column">
+                    <div class="contacts__icon">
+                        <i class="fa fa-clock-o fa-4x" aria-hidden="true"></i>
+                    </div>
+                    <div class="contacts__data">
+                        <div class="days">
+                            <div class="days__element">Пн-Пт</div>
+                            <div class="days__element">Сб</div>
+                            <div class="days__element">Вс</div>
+                        </div>
+                        <div class="hours">
+                            <div class="hours__element">10:00-19:00</div>
+                            <div class="hours__element">10:00-16:00</div>
+                            <div class="hours__element">выходной</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-12  contacts__column">
+                    <div class="contacts__icon">
+                        <i class="fa fa-map-marker fa-4x" aria-hidden="true"></i>
+                    </div>
+                    <div class="contacts__data">г. Астрахань,
+                        <br>ул. Коммунистическая, 20/Кр.
+                        <br> Набережная, 38. (вход через
+                        <br> арку со стороны набережной)</div>
+                </div>
+                <div class="col-sm-4 ol-12  contacts__column">
+                    <div class="contacts__icon">
+                        <i class="fa fa-phone fa-4x" aria-hidden="true"></i>
+                    </div>
+                    <div class="contacts__data contacts__data_block">
+                        <div class="contacts__phone">+7 (8512) 26-67-89</div>
+                        <div class="contacts__phone">+7 908-611-20-12</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION 3 - NEWS -->
+    <section class="news padding-top-bottom">
+        <div class="container">
+            <div class="caption">Новости</div>
+            <div class="news__block">
+                <div class="news__item">
+                    <div class="news__title">Иордания из Краснодара</div>
+                    <div class="news__text news__text_height">Стартовые цены на отели:
+                        <br>
+                        <br>3* отель от 29 800 руб. *
+                        <br>
+                        <br>3* отель от 29 800 руб. *
+                        <br>
+                        <br>3* отель от 29 800 руб. *
+                        <br>
+                        <br>*цена указана за человека при двухместном размещении. В указанную стоимость включено -
+                        <br>авиаперелет, проживнаие, завтраки,
+                        <br>трансфер и страховка.
+                    </div>
+                    <div class="news__date">13-05-2018</div>
+                </div>
+                <div class="news__item">
+                    <div class="news__title">Авиабилеты</div>
+                    <div class="news__text">А мы напоминаем Вам, что у нас Вы также можете приобрести авиабилеты!
+                    </div>
+                    <div class="news__date">13-05-2018</div>
+                </div>
+                <div class="news__item">
+                    <div class="news__title">Раннее бронирование</div>
+                    <div class="news__text">А авиабилеты!
+                    </div>
+                    <div class="news__date">13-05-2018</div>
+                </div>
+                <div class="news__item">
+                    <div class="news__title">Тур выходного дня</div>
+                    <div class="news__text">А мы напоминаем Вам, что у нас Вы также можете приобрести авиабилеты!
+                    </div>
+                    <div class="news__date">13-05-2018</div>
+                </div>
+                <div class="news__item">
+                    <div class="news__title">Израиль - Мин. Воды</div>
+                    <div class="news__text">Открытая полетная программа и Израиль из Минеральных Вод. Первый вылет 6 декабря на 7 ночей. Стартовая
+                        цена от 35 000 руб.
+                    </div>
+                    <div class="news__date">13-05-2018</div>
+                </div>
+            </div>
+
+            <div class="caption" style="padding-bottom: 5px;">Подписка</div>
+            <div class="subscription">
+                <form method="post" name="subscription">
+                    <input type="email" name="email" required placeholder="Введите E-mail">
+                    <button type="submit" class="blue-btn">OK</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION 4 - CONTINENTS -->
+    <section class="continents padding-top-bottom">
+        <div class="container">
+            <div class="caption caption_center">Выберете свой отдых</div>
+        </div>
+        <div class="container-fluid continents-wrap">
+            <div class="continents__item">
+                <a class="link-color-blue" href="http://">
+                    <div class="continents__item__label" style="top: 55%;left: 54%;">Северная
+                        <br>Америка</div>
+                    <img src="./img/continents/NAM.png" alt="Северная Америка">
+                </a>
+            </div>
+            <div class=" continents__item">
+                <a class="link-color-blue" href="http://">
+                    <div class="continents__item__label" style="top: 42%;left: 57%;">Южная
+                        <br>Америка</div>
+                    <img src="./img/continents/SAM.png" alt="">
+                </a>
+            </div>
+            <div class="continents__item">
+                <a class="link-color-blue" href="http://">
+                    <div class="continents__item__label" style="top: 42%;left: 62%;">Африка</div>
+                    <img src="./img/continents/AFR.png" alt="">
+                </a>
+            </div>
+            <div class=" continents__item">
+                <a class="link-color-blue" href="http://">
+                    <div class="continents__item__label" style="top: 45%;left: 54%;">Австралия</div>
+                    <img src="./img/continents/AUS.png" alt="">
+                </a>
+            </div>
+            <div class=" continents__item">
+                <a class="link-color-blue" href="http://">
+                    <div class="continents__item__label" style="top: 40%;left: 52%;">Азия</div>
+                    <img src="./img/continents/ASI.png" alt="">
+                </a>
+            </div>
+            <div class=" continents__item">
+                <a class="link-color-blue" href="http://">
+                    <div class="continents__item__label" style="top: 45%;left: 68%;">Евразия</div>
+                    <img src="./img/continents/EUR.png" alt="">
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--SECTION 5 - POPULAR TOURS -->
+    <section class="popular-tours padding-top-bottom">
+        <div class="container">
+            <div class="caption caption_center">Популярные туры</div>
+        </div>
+
+        <div class="popular-tours__wrap">{{#each this}} {{>'./components/popular-tour'}}{{/each}}
+        </div>
+        {{!-- {{tours: [1, 2, 3]}} --}}
+
+    </section>
+
+    <!--SECTION 6 - FOOTER -->
+    <footer class="footer">
+        <div class="tour-operators">
+            <div class="tour-operators_item grayscale">
+                <img src="./img/operators/pegas.png" alt="Pegas">
+            </div>
+            <div class="tour-operators_item grayscale ">
+                <img src="./img/operators/mouzenidis.jpg" alt="Mouzendis-Travel">
+            </div>
+            <div class="tour-operators_item grayscale ">
+                <img src="./img/operators/coraltravel.png" alt="Coraltravel">
+            </div>
+            <div class="tour-operators_item grayscale ">
+                <img src="./img/operators/teztour.png" alt="Teztour">
+            </div>
+            <div class="tour-operators_item grayscale ">
+                <img src="./img/operators/natalie.png" alt="Natalie tours">
+            </div>
+            <div class="tour-operators_item grayscale ">
+                <img src="./img/operators/danco.png" alt="DANCO travel company">
+            </div>
+            <div class="tour-operators_item grayscale ">
+                <img src="./img/operators/pacgroup.png" alt="Pac group">
+            </div>
+            <div class="tour-operators_item grayscale ">
+                <img src="./img/operators/biblioglob.png" alt="Библио Глобус">
+            </div>
+            <div class="tour-operators_item grayscale ">
+                <img src="./img/operators/anextour.png" alt="Anex tour">
+            </div>
+            <div class="tour-operators_item grayscale ">
+                <img src="./img/operators/travelsystem.png" alt="Travel System">
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <div class="row">
+                <div class="col copyright">&copy;2018 Kalieva Diana</div>
+                <nav class="col footer__nav">
+                    <a href="#" class="footer_nav__link link-color-blue">Главная</a>
+                    <a href="#" class="footer_nav__link link-color-blue">Страны</a>
+                    <a href="#" class="footer_nav__link link-color-blue">Туры</a>
+                    <a href="#" class="footer_nav__link link-color-blue">Услуги</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

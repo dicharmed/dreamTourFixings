@@ -1,0 +1,47 @@
+/*--------------------------FOOTER---------------------------------*/
+
+.footer{
+    padding: 15px 0;
+    background: $light-gray;
+}
+.tour-operators {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.tour-operators_item img {
+    height: 30px;
+    
+}
+.grayscale img {
+    filter: grayscale(1) opacity(0.4);
+    transition: 0.7s;    
+}
+
+.grayscale img:hover {
+    filter: none;    
+}
+
+.footer-bottom {   
+    margin-top: 20px;
+    color: #7b8a97;
+    font-size: 12px;
+}
+
+.footer__nav {
+    text-align: right;
+
+    @media screen and(max-width:800px){
+        display: none;
+    }
+
+}
+
+.footer_nav__link {
+    margin-right: 20px;
+    color: #7b8a97;
+}
+
+.footer_nav__link:last-child {
+    margin-right: 0;
+}

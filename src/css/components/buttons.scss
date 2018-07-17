@@ -1,0 +1,18 @@
+    //blue buttons:
+
+    .blue-btn input[type="submit"], button.blue-btn{
+        font-size: 13px;
+        color: white;
+        border-radius: 2px;
+        border: none;
+        background-color: $blue;    
+        box-shadow: 0 3px 0 #2274ab;
+        cursor: pointer;  
+        outline: none;
+        transition: 0.4s;
+    }
+
+
+    .blue-btn input[type="submit"]:hover, button.blue-btn:hover {
+        filter: grayscale(90%);
+    }
